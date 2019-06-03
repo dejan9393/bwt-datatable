@@ -677,8 +677,6 @@ class PaperDatatable extends mixinBehaviors([IronScrollTargetBehavior, IronResiz
 				var row = rows[rowI];
 				//find the data that belongs with the row
 				var rowData = this.get(['data', rowI]);
-				console.log('row data old', rowData);
-				console.log('row data new', this._getByKey(row.dataset.key));
 				//prevent errors if row empty
 				if (!rowData) return;
 				// var cells = Polymer.dom(row).querySelectorAll('.bound-cell');
